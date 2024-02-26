@@ -43,8 +43,21 @@ body {
     background: var(--bg);
 }
 
-section{
+section {
     padding: 2rem 7%;
+}
+
+.heading {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 4rem;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
 }
 
 .btn {
@@ -199,7 +212,7 @@ section{
     text-align: center;
 }
 
-.home{
+.home {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -208,17 +221,17 @@ section{
     background-position: center;
 }
 
-.home .content{
+.home .content {
     max-width: 60rem;
 }
 
-.home .content h3{
+.home .content h3 {
     font-size: 6rem;
     text-transform: uppercase;
     color: #fff;
 }
 
-.home .content p{
+.home .content p {
     font-size: 2rem;
     font-weight: lighter;
     line-height: 1.8;
@@ -234,7 +247,8 @@ section{
     .header {
         padding: 1.5rem 2rem;
     }
-    section{
+
+    section {
         padding: 2rem;
     }
 }
@@ -270,22 +284,55 @@ section{
         right: 2rem;
     }
 
-    .home{
+    .home {
         background-position: left;
         justify-content: center;
         text-align: center;
     }
-    .home .content h3{
+
+    .home .content h3 {
         font-size: 4.5rem;
     }
 
-    .home .content p{
+    .home .content p {
         font-size: 1.5rem;
     }
 }
 
-@media (max-width:450px){
-    html{
+@media (max-width:450px) {
+    html {
         font-size: 50%;
     }
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    font-size: 3rem;
+    color: #fff;
+}
+
+.about .row .content p {
+    font-size: 1.6rem;
+    color: #ccc;
+    padding: 1rem 0;
+    line-height: 1.8;
 }
